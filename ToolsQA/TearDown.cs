@@ -21,19 +21,13 @@ namespace ToolsQA
     public class TearDown
     {
         public IWebDriver driver;
-        
+
 
         public void SaveLogs()
         {
 
             var path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\Logs\");
             string filename = path + TestContext.CurrentContext.Test.MethodName + ".txt";
-
-            //if (TestContext.CurrentContext.Result.Outcome.Status == TestStatus.Failed)
-            //{
-            //    var screenshot = ((ITakesScreenshot)driver).GetScreenshot();
-            //    screenshot.SaveAsFile(path + TestContext.CurrentContext.Test.Name + ".jpg", ScreenshotImageFormat.Jpeg); ;
-            //}
 
             using (var writer = File.AppendText(filename))
             {

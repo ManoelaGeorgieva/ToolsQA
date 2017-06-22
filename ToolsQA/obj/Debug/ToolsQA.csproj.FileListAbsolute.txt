@@ -12,3 +12,17 @@ D:\QA Automation\ToolsQA\ToolsQA\bin\Debug\WebDriver.xml
 D:\QA Automation\ToolsQA\ToolsQA\bin\Debug\WebDriver.Support.xml
 D:\QA Automation\ToolsQA\ToolsQA\obj\Debug\ToolsQA.dll
 D:\QA Automation\ToolsQA\ToolsQA\obj\Debug\ToolsQA.pdb
+D:\QA Automation\Tools\ToolsQA\ToolsQA\bin\Debug\ToolsQA.dll.config
+D:\QA Automation\Tools\ToolsQA\ToolsQA\bin\Debug\ToolsQA.dll
+D:\QA Automation\Tools\ToolsQA\ToolsQA\bin\Debug\ToolsQA.pdb
+D:\QA Automation\Tools\ToolsQA\ToolsQA\bin\Debug\Dapper.dll
+D:\QA Automation\Tools\ToolsQA\ToolsQA\bin\Debug\nunit.framework.dll
+D:\QA Automation\Tools\ToolsQA\ToolsQA\bin\Debug\WebDriver.dll
+D:\QA Automation\Tools\ToolsQA\ToolsQA\bin\Debug\WebDriver.Support.dll
+D:\QA Automation\Tools\ToolsQA\ToolsQA\bin\Debug\Dapper.xml
+D:\QA Automation\Tools\ToolsQA\ToolsQA\bin\Debug\nunit.framework.xml
+D:\QA Automation\Tools\ToolsQA\ToolsQA\bin\Debug\WebDriver.xml
+D:\QA Automation\Tools\ToolsQA\ToolsQA\bin\Debug\WebDriver.Support.xml
+D:\QA Automation\Tools\ToolsQA\ToolsQA\obj\Debug\ToolsQA.csprojResolveAssemblyReference.cache
+D:\QA Automation\Tools\ToolsQA\ToolsQA\obj\Debug\ToolsQA.dll
+D:\QA Automation\Tools\ToolsQA\ToolsQA\obj\Debug\ToolsQA.pdb

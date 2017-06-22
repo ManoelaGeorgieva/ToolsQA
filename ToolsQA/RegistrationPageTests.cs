@@ -43,15 +43,12 @@ namespace ToolsQA
             {
                 IWebElement actualError = driver.FindElement(By.XPath(user.ErrorLocator));
                 StringAssert.Contains(user.ErrorMessage, actualError.Text);
-
             }
             catch (Exception)
             {
                 cleaner.TakeScreenShot(this.driver);
                 Assert.IsTrue(false);
             }
-
-
         }
 
         public void SubmitRegistrationWithExcelData(string testName)
@@ -61,10 +58,17 @@ namespace ToolsQA
             regPage.NavigateTo();
             regPage.FillRegistrationForm(user);
             regPage.SubmitRegistrationForm();
-            IWebElement actualError = driver.FindElement(By.XPath(user.ErrorLocator));
-            Assert.IsTrue(actualError.Displayed);
-            StringAssert.Contains(user.ErrorMessage, actualError.Text);
+            try
+            {
+                IWebElement actualError = driver.FindElement(By.XPath(user.ErrorLocator));
+                StringAssert.Contains(user.ErrorMessage, actualError.Text);
 
+            }
+            catch (Exception)
+            {
+                cleaner.TakeScreenShot(this.driver);
+                Assert.IsTrue(false);
+            }
         }
 
         [Test]
@@ -74,13 +78,13 @@ namespace ToolsQA
             RegistrationPage page = new RegistrationPage(this.driver);
             page.NavigateTo();
             page.SubmitRegistrationForm();
-
-            page.AssertNamesErrorMessage("This field is required");
-            page.AssertHobbiesErrorMessage("This field is required");
-            page.AssertPhoneErrorMessage("This field is required");
-            page.AssertUsernameErrorMessage("This field is required");
-            page.AssertPasswordErrorMessage("This field is required");
-            page.AssertConfirmPasswordErrorMessage("This field is required");
+            string errorMsg = "This field is required";
+            page.AssertNamesErrorMessage(errorMsg);
+            page.AssertHobbiesErrorMessage(errorMsg);
+            page.AssertPhoneErrorMessage(errorMsg);
+            page.AssertUsernameErrorMessage(errorMsg);
+            page.AssertPasswordErrorMessage(errorMsg);
+            page.AssertConfirmPasswordErrorMessage(errorMsg);
         }
 
         [Test]
